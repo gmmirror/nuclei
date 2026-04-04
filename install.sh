@@ -18,7 +18,6 @@ command git clone --depth 1 \
 
 cd "${PREFIX}/opt/nuclei"
 command go mod tidy
-export CGO_ENABLED=1
 command go build -v -o \
     "${PREFIX}/bin/nuclei" \
     "cmd/nuclei/main.go"
